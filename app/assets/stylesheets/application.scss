@@ -12,3 +12,9 @@
  *
  */
 @import "bootstrap";
+
+/*半角英数字だけ突き抜けていたものを枠内に収める*/ 
+body{
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
