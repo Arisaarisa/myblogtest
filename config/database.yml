@@ -22,5 +22,7 @@ test:
 
 production:
   # <<: *default
+  host: <%= Rails.application.credentials.aws[:rds_host] %>
   # database: db/production.sqlite3
   adapter: postgresql
+  password: <%= Rails.application.credentials.database[:user_password] %>
